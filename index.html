@@ -2,18 +2,23 @@
 <html lang="es">
   <head>
     <title>La vida en lienzo</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Galería de arte con pinturas en acrílico, acuarela y esculturas en hormigón y metal. Realización de talleres artísticos para todas las edades.">
-    <meta name="keywords" content="arte, pintura, acrílico, acuarela, escultura, lienzo, galería, taller, creación artística">
-    <meta name="author" content="Patricia Caamaño">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Galería de arte con pinturas en acrílico, acuarela y esculturas en hormigón y metal. Realización de talleres artísticos para todas las edades."
+    />
+    <meta
+      name="keywords"
+      content="arte, pintura, acrílico, acuarela, escultura, lienzo, galería, taller, creación artística"
+    />
+    <meta name="author" content="Patricia Caamaño" />
     <link href="./style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
 
   <body>
-    <!--Cabecera iconos-->
     <header>
       <div class="contenido-header">
         <div class="titulo">
@@ -40,7 +45,7 @@
           <h1>La vida en lienzo</h1>
         </div>
         <div class="iconos-superiores">
-          <a href="#" title="Buscar">
+          <a href="#" aria-label="Realizar una búsqueda en el sitio">
             <picture>
               <source
                 srcset="CSS/Imagenes/Iconos/Lupa.webp"
@@ -56,12 +61,12 @@
               />
             </picture>
           </a>
-          <a href="#" title="Usuario">
+          <a href="#" aria-label="Acceder a tu perfil de usuario">
             <picture>
               <source
                 srcset="CSS/Imagenes/Iconos/Usuario.webp"
                 type="image/webp"
-                />
+              />
               <img
                 src="CSS/Imagenes/Iconos/Usuario.png"
                 alt="Icono de usuario"
@@ -72,12 +77,12 @@
               />
             </picture>
           </a>
-          <a href="#" title="Carrito">
+          <a href="#" aria-label="Ver tu cesta de la compra">
             <picture>
               <source
-              srcset="CSS/Imagenes/Iconos/Cesta-compra.webp"
+                srcset="CSS/Imagenes/Iconos/Cesta-compra.webp"
                 type="image/webp"
-                />
+              />
               <img
                 src="CSS/Imagenes/Iconos/Cesta-compra.png"
                 alt="Icono de carrito"
@@ -93,398 +98,795 @@
     </header>
 
     <section class="carrusel" aria-label="Galería de imágenes destacadas">
-      <!--Cabecera carrusel-->
-      <div class="carrusel" role="region" aria-label="Galería de imágenes destacadas">
-        <input type="radio" id="radio1" name="radio" checked aria-label="Imagen 1: Busto" />
-        <input type="radio" id="radio2" name="radio" checked aria-label="Imagen 2: Conjunto de lienzos en tonos pastel" />
-        <input type="radio" id="radio3" name="radio" checked aria-label="Imagen 3: Vajilla cerámica con diseño geométrico" />
-        <input type="radio" id="radio4" name="radio" checked aria-label="Imagen 4: Taller de creación artística" />
-        <!--Contenedor de Imagenes-->
+      <div
+        class="carrusel"
+        role="region"
+        aria-label="Galería de imágenes destacadas"
+      >
+        <input
+          type="radio"
+          id="radio1"
+          name="radio"
+          checked
+          aria-label="Imagen 1: Busto"
+        />
+        <input
+          type="radio"
+          id="radio2"
+          name="radio"
+          checked
+          aria-label="Imagen 2: Conjunto de lienzos en tonos pastel"
+        />
+        <input
+          type="radio"
+          id="radio3"
+          name="radio"
+          checked
+          aria-label="Imagen 3: Vajilla cerámica con diseño geométrico"
+        />
+        <input
+          type="radio"
+          id="radio4"
+          name="radio"
+          checked
+          aria-label="Imagen 4: Taller de creación artística"
+        />
         <div class="slides">
           <div class="slide">
-<picture>
-    <source srcset="CSS/Imagenes/Imagenes-cabecera/Busto-800.webp" 
-            media="(max-width: 600px)" 
-            type="image/webp">
-    <source srcset="CSS/Imagenes/Imagenes-cabecera/Busto.webp" 
-            type="image/webp">
-    <img src="CSS/Imagenes/Imagenes-cabecera/Busto.jpg" 
-         alt="Busto de mujer realizado en Ceramica" width="1200" height="800"
-         loading="eager"
-         fetchpriority="high" />
-</picture>
-          </div>
-          <div class="slide">
             <picture>
-                <source srcset="CSS/Imagenes/Imagenes-cabecera/Lienzo-800.webp" media="(max-width: 600px)" type="image/webp">
-                <source srcset="CSS/Imagenes/Imagenes-cabecera/Lienzo.webp" type="image/webp">
-              <img src="CSS/Imagenes/Imagenes-cabecera/Lienzo.jpg" alt="Conjunto de lienzos en tonalidades pastel" width="1200" height="800" loading="lazy" decoding="async"/>
+              <source
+                srcset="CSS/Imagenes/Imagenes-cabecera/Busto-800.webp"
+                media="(max-width: 600px)"
+                type="image/webp"
+              />
+              <source
+                srcset="CSS/Imagenes/Imagenes-cabecera/Busto.webp"
+                type="image/webp"
+              />
+              <img
+                src="CSS/Imagenes/Imagenes-cabecera/Busto.jpg"
+                alt="Busto de mujer realizado en Ceramica"
+                loading="eager"
+                fetchpriority="high"
+              />
             </picture>
           </div>
           <div class="slide">
             <picture>
-                <source srcset="CSS/Imagenes/Imagenes-cabecera/Vajilla-800.webp" media="(max-width: 600px)" type="image/webp">
-                <source srcset="CSS/Imagenes/Imagenes-cabecera/Vajilla.webp" type="image/webp">
-                <img src="CSS/Imagenes/Imagenes-cabecera/Vajilla.jpg" alt="Vajilla Ceramica con diseño geométrico" width="1200" height="800" loading="lazy" decoding="async"/>
+              <source
+                srcset="CSS/Imagenes/Imagenes-cabecera/Lienzo-800.webp"
+                media="(max-width: 600px)"
+                type="image/webp"
+              />
+              <source
+                srcset="CSS/Imagenes/Imagenes-cabecera/Lienzo.webp"
+                type="image/webp"
+              />
+              <img
+                src="CSS/Imagenes/Imagenes-cabecera/Lienzo.jpg"
+                alt="Conjunto de lienzos en tonalidades pastel"
+                loading="lazy"
+                decoding="async"
+              />
             </picture>
           </div>
           <div class="slide">
             <picture>
-                <source srcset="CSS/Imagenes/Imagenes-cabecera/Taller-800.webp" media="(max-width: 600px)" type="image/webp">
-                <source srcset="CSS/Imagenes/Imagenes-cabecera/Taller.webp" type="image/webp">
-              <img src="CSS/Imagenes/Imagenes-cabecera/Taller.jpg" alt="Imagen del taller de creación" width="1200" height="800" loading="lazy" decoding="async"/>
+              <source
+                srcset="CSS/Imagenes/Imagenes-cabecera/Vajilla-800.webp"
+                media="(max-width: 600px)"
+                type="image/webp"
+              />
+              <source
+                srcset="CSS/Imagenes/Imagenes-cabecera/Vajilla.webp"
+                type="image/webp"
+              />
+              <img
+                src="CSS/Imagenes/Imagenes-cabecera/Vajilla.jpg"
+                alt="Vajilla Ceramica con diseño geométrico"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </div>
+          <div class="slide">
+            <picture>
+              <source
+                srcset="CSS/Imagenes/Imagenes-cabecera/Taller-800.webp"
+                media="(max-width: 600px)"
+                type="image/webp"
+              />
+              <source
+                srcset="CSS/Imagenes/Imagenes-cabecera/Taller.webp"
+                type="image/webp"
+              />
+              <img
+                src="CSS/Imagenes/Imagenes-cabecera/Taller.jpg"
+                alt="Imagen del taller de creación"
+                loading="lazy"
+                decoding="async"
+              />
             </picture>
           </div>
         </div>
       </div>
     </section>
 
-    <!--Contenido principal-->
     <main class="contenedor-principal">
-      <!--Columna izquierda-->
       <section class="columna-izquierda">
-        <!--Disciplinas-->
         <nav class="disciplinas" aria-label="Disciplinas artísticas">
           <h2>Disciplinas</h2>
           <ul>
-            <li><b>Lienzos</b></li>
-            <ul class="submenu-acrilico">
-              <span>Acrilico</span>
-              <picture>
-                <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-800.webp" media="(max-width:600px)" type="image/webp">
-                <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico.webp" type="image/webp">
-              <img src="CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico.jpg" alt="Pintura en Acrilico, diseño minimalista en tonos anaranjados" width="200" height="200" loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-                <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-3-800.webp" media="(max-width:600px)" type="image/webp">
-                <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-3.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-3.jpg"
-                alt="Pintura en Acrilico con relieve, estilo barroco, en tonalidades naranjas"
-                width="200"
-                height="200" loading="lazy" decoding="async"
-              >
-              </picture>
-              <picture>
-                <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-2-800.webp" media="(max-width:600px)" type="image/webp">
-                <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-2.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-2.jpg"
-                alt="Pintura en Acrilico simplista en tonos rosados. Evoca una vista al horizonte"
-                width="200"
-                height="200" loading="lazy" decoding="async"
-              />
-              </picture>
-            </ul>
-
-            <ul class="submenu-oleo">
-              <span>Oleos</span>
-              <picture> 
-              <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo1-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo1.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo1.jpg"
-                alt="Pintura abstracta minimalista de un horizonte marino, con cielo en tono crema y mar texturizado en azul"
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-            <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo3-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo3.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo3.jpg"
-                alt="Panel decorativo cuadrado con un borde ornamental de filigranas blancas y un centro circular difuminado en tonos azules"
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-            <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo2-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo2.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo2.jpg"
-                alt="Pintura abstracta contemporánea con pinceladas texturizadas en tonos azules y blancos, enmarcada en blanco"
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>    
-            </ul>
-
-            <ul class="submenu-acuarela">
-              <span>Acuarelas</span>
-              <picture>
-            <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela-2-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela-2.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela-2.jpg"
-                alt="Acuarela abstracta con formas etéreas en rosa y azul, superpuestas con círculos y líneas finas doradas, en un marco dorado."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture> 
-              <picture>
-                <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela3-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela3.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela3.jpg"
-                alt="Pintura abstracta en tonos melocotón y gris, con formas orgánicas de acuarela y líneas geométricas de arcos, en marco blanco."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-               <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Lienzos/Acuarela/acuarela.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela.jpg"
-                alt="Tríptico de arte estilo mandala, con una flor central y patrones geométricos detallados en tonos melocotón y beige"
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-            </ul>
-            <br />
-            <br />
-            <li><b>Esculturas</b></li>
-            <ul class="submenu-arcilla">
-              <span>Arcilla</span>
-              <picture>
-            <source srcset="CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla1-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla1.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla1.jpg"
-                alt="Escultura geométrica minimalista en tono beige, con una esfera sobre un cubo dentro de un marco cuadrado."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-             <source srcset="CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla2-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla2.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla2.jpg"
-                alt="Panel cuadrado en bajorrelieve con un detallado mandala floral y patrones intrincados, en tono crema"
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-               <source srcset="CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla3-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla3.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla3.jpg"
-                alt="Escultura de pared en 3D en tono crema, con formas curvas abstractas y una esfera, dentro de un marco blanco."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-            </ul>
-
-            <ul class="submenu-Hormigon">
-              <span>Hormigon</span>
-              <picture>
-                <source srcset="CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon2-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon2.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon2.jpg"
-                alt="Escultura abstracta de hormigón con formas onduladas y laminadas, sobre una base rectangular y con un marco de fondo."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-                <source srcset="CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon3-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon3.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon3.jpg"
-                alt="Bajorrelieve de hormigón que muestra un busto estilizado de perfil, sobre una base cuadrada."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-                <source srcset="CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon4-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon4.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon4.jpg"
-                alt="Bajorrelieve enmarcado en hormigón con una figura abstracta y curvilínea dentro de un círculo."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-            </ul>
-
-            <ul class="submenu-metal">
-              <span>Metal</span>
-              <picture>
-               <source srcset="CSS/Imagenes/Disciplinas/Escultura/Metal/Metal1-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Escultura/Metal/metal1.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Escultura/Metal/Metal1.jpg"
-                alt="Escultura moderna de metal cepillado con formas curvas abstractas, enmarcada en un cubo de metal."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
+            <li>
+              <b>Lienzos</b>
+              <ul class="submenu-acrilico">
+                <span>Acrilico</span>
                 <picture>
-              <source srcset="CSS/Imagenes/Disciplinas/Escultura/Metal/Metal2-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Escultura/Metal/Metal2.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Escultura/Metal/Metal2.jpg"
-                alt="Panel de metal plateado con un diseño geométrico estilo Art Deco de círculos concéntricos y líneas verticales."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-               <source srcset="CSS/Imagenes/Disciplinas/Escultura/Metal/Metal3-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Escultura/Metal/Metal3.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Escultura/Metal/Metal3.jpg"
-                alt="Escultura de metal en tono bronce de una figura humana estilizada sentada, dentro de un marco cuadrado."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-            </ul>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-800.webp
+                    "
+                    media="(max-width:600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico.jpg"
+                    alt="Pintura en Acrilico, diseño minimalista en tonos anaranjados"
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-3-800.webp
+                    "
+                    media="(max-width:600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-3.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-3.jpg"
+                    alt="Pintura en Acrilico con relieve, estilo barroco, en tonalidades naranjas"
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-2-800.webp
+                    "
+                    media="(max-width:600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-2.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Lienzos/Acrilico/Acrilico-2.jpg"
+                    alt="Pintura en Acrilico simplista en tonos rosados. Evoca una vista al horizonte"
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </ul>
+
+              <ul class="submenu-oleo">
+                <span>Oleos</span>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo1-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo1.jpg"
+                    alt="Pintura abstracta minimalista de un horizonte marino, con cielo en tono crema y mar texturizado en azul"
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo3-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo3.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo3.jpg"
+                    alt="Panel decorativo cuadrado con un borde ornamental de filigranas blancas y un centro circular difuminado en tonos azules"
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo2-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Lienzos/Oleo/Oleo2.jpg"
+                    alt="Pintura abstracta contemporánea con pinceladas texturizadas en tonos azules y blancos, enmarcada en blanco"
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </ul>
+
+              <ul class="submenu-acuarela">
+                <span>Acuarelas</span>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela-2-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela-2.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela-2.jpg"
+                    alt="Acuarela abstracta con formas etéreas en rosa y azul, superpuestas con círculos y líneas finas doradas, en un marco dorado."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela3-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela3.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela3.jpg"
+                    alt="Pintura abstracta en tonos melocotón y gris, con formas orgánicas de acuarela y líneas geométricas de arcos, en marco blanco."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Lienzos/Acuarela/acuarela.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Lienzos/Acuarela/Acuarela.jpg"
+                    alt="Tríptico de arte estilo mandala, con una flor central y patrones geométricos detallados en tonos melocotón y beige"
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </ul>
+            </li>
 
             <br />
             <br />
 
-            <li><b>Ceramica</b></li>
-            <ul class="submenu-bustos">
-              <span>Bustos</span>
-              <picture>
-                <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto1-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto1.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto1.jpg"
-                alt="Bajorrelieve Art Deco de un busto de mujer, con un lado de cabello ondulado y otro de rostro estilizado."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-               <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto3-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto3.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto3.jpg"
-                alt="Bajorrelieve de un busto de perfil estilizado en tono crema, seccionado con líneas curvas, sobre un fondo de lino."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-               <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto5-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto5.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto5.jpg"
-                alt="Busto de perfil de una mujer estilizada en tono crema, con un marco de fondo."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-               </ul>
-            <ul class="submenu-jarrones">
-              <span>Jarrones</span>
-              <picture>
-              <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron9-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron9.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron9.jpg"
-                alt="Jarrón de cerámica acanalado con un degradado de beige a azul, dentro de un marco de madera."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-              <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron5-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron5.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron5.jpg"
-                alt="Jarrón de cerámica esférico con un patrón geométrico de líneas y un degradado de azul a crema."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-               <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron2-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron2.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron2.jpg"
-                alt="Jarrón de cerámica minimalista en tono beige con un diseño de constelación, dentro de un marco de madera."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-            </ul>
-            <ul class="submenu-vajilla">
-              <span>Vajilla</span>
-              <picture>
-              <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla4-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla4.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla4.jpg"
-                alt="Platos de cerámica apilados concéntricamente en tonos rosa y azul, con diseños de constelaciones, dentro de un marco."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-               <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla1-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla1.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla1.jpg"
-                alt="Juego de vajilla de cerámica apilado en tonos rosa y crema, con textura de líneas finas."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-              <picture>
-              <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla3-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla3.webp" type="image/webp">
-              <img
-                src="CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla3.jpg"
-                alt="Composición de cuencos de cerámica apilados en tonos malva y gris, con patrones en relieve, dentro de un marco."
-                width="200"
-                height="200"
-                loading="lazy" decoding="async"
-              />
-              </picture>
-            </ul>
+            <li>
+              <b>Esculturas</b>
+              <ul class="submenu-arcilla">
+                <span>Arcilla</span>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla1-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla1.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla1.jpg"
+                    alt="Escultura geométrica minimalista en tono beige, con una esfera sobre un cubo dentro de un marco cuadrado."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla2-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla2.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla2.jpg"
+                    alt="Panel cuadrado en bajorrelieve con un detallado mandala floral y patrones intrincados, en tono crema"
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla3-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla3.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Escultura/Arcilla/Arcilla3.jpg"
+                    alt="Escultura de pared en 3D en tono crema, con formas curvas abstractas y una esfera, dentro de un marco blanco."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </ul>
+
+              <ul class="submenu-Hormigon">
+                <span>Hormigon</span>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon2-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon2.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon2.jpg"
+                    alt="Escultura abstracta de hormigón con formas onduladas y laminadas, sobre una base rectangular y con un marco de fondo."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon3-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon3.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon3.jpg"
+                    alt="Bajorrelieve de hormigón que muestra un busto estilizado de perfil, sobre una base cuadrada."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon4-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon4.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Escultura/Hormigon/Hormigon4.jpg"
+                    alt="Bajorrelieve enmarcado en hormigón con una figura abstracta y curvilínea dentro de un círculo."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </ul>
+
+              <ul class="submenu-metal">
+                <span>Metal</span>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Metal/Metal1-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Metal/metal1.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Escultura/Metal/Metal1.jpg"
+                    alt="Escultura moderna de metal cepillado con formas curvas abstractas, enmarcada en un cubo de metal."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Metal/Metal2-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Metal/Metal2.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Escultura/Metal/Metal2.jpg"
+                    alt="Panel de metal plateado con un diseño geométrico estilo Art Deco de círculos concéntricos y líneas verticales."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Metal/Metal3-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Escultura/Metal/Metal3.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Escultura/Metal/Metal3.jpg"
+                    alt="Escultura de metal en tono bronce de una figura humana estilizada sentada, dentro de un marco cuadrado."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </ul>
+            </li>
+
+            <br />
+            <br />
+
+            <li>
+              <b>Ceramica</b>
+              <ul class="submenu-bustos">
+                <span>Bustos</span>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto1-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto1.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto1.jpg"
+                    alt="Bajorrelieve Art Deco de un busto de mujer, con un lado de cabello ondulado y otro de rostro estilizado."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto3-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto3.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto3.jpg"
+                    alt="Bajorrelieve de un busto de perfil estilizado en tono crema, seccionado con líneas curvas, sobre un fondo de lino."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto5-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto5.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Ceramica/Bustos/Busto5.jpg"
+                    alt="Busto de perfil de una mujer estilizada en tono crema, con un marco de fondo."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </ul>
+              <ul class="submenu-jarrones">
+                <span>Jarrones</span>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron9-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron9.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron9.jpg"
+                    alt="Jarrón de cerámica acanalado con un degradado de beige a azul, dentro de un marco de madera."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron5-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron5.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron5.jpg"
+                    alt="Jarrón de cerámica esférico con un patrón geométrico de líneas y un degradado de azul a crema."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron2-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron2.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Ceramica/Jarrones/Jarron2.jpg"
+                    alt="Jarrón de cerámica minimalista en tono beige con un diseño de constelação, dentro de un marco de madera."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </ul>
+              <ul class="submenu-vajilla">
+                <span>Vajilla</span>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla4-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla4.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla4.jpg"
+                    alt="Platos de cerámica apilados concéntricamente en tonos rosa y azul, con diseños de constelaciones, dentro de un marco."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla1-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla1.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla1.jpg"
+                    alt="Juego de vajilla de cerámica apilado en tonos rosa y crema, con textura de líneas finas."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla3-800.webp
+                    "
+                    media="(max-width: 600px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla3.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="CSS/Imagenes/Disciplinas/Ceramica/Vajilla/Vajilla3.jpg"
+                    alt="Composición de cuencos de cerámica apilados en tonos malva y gris, con patrones en relieve, dentro de un marco."
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </ul>
+            </li>
           </ul>
         </nav>
       </section>
 
-      <!-- Columna derecha -->
       <section class="columna-derecha">
-        <!-- Descripción personal -->
         <div class="descripcion">
+          <div class="descripcion" id="quien-soy">
           <h2>Quién soy</h2>
           <p>
             Soy una artista multidisciplinar, apasionada por la creación de
@@ -501,44 +903,65 @@
             artístico.
           </p>
         </div>
+        </div>
 
-        <!--Redes sociales-->
         <div class="contacto">
           <div class="iconos-social-media">
-            <a href="#" title="Whatsapp">
-              <img
-                src="CSS/Imagenes/RRSS/Instagram.png"
-                alt="Icono de Instagram"
-                width="50"
-                height="50"
-                loading="lazy" decoding="async"
-              />
+            <a href="#" title="Instagram" aria-label="Visita mi perfil de Instagram">
+              <picture>
+                <source
+                  srcset="CSS/Imagenes/RRSS/Instagram.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="CSS/Imagenes/RRSS/Instagram.png"
+                  alt="Icono de Instagram"
+                  width="50"
+                  height="50"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </a>
-            <a href="#" title="Instagram">
-              <img
-                src="CSS/Imagenes/RRSS/Etsy.png"
-                alt="Icono de Etsy"
-                width="50"
-                height="50"
-                loading="lazy" decoding="async"
-              />
+            <a href="#" title="Etsy" aria-label="Visita mi tienda en Etsy">
+              <picture>
+                <source
+                  srcset="CSS/Imagenes/RRSS/Etsy.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="CSS/Imagenes/RRSS/Etsy.png"
+                  alt="Icono de Etsy"
+                  width="50"
+                  height="50"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </a>
-            <a href="#" title="Email">
-              <img
-                src="CSS/Imagenes/RRSS/TikTok.png"
-                alt="Icono de Tiktok"
-                width="40"
-                height="40"
-                loading="lazy" decoding="async"
-              />
+            <a href="#" title="TikTok" aria-label="Visita mi perfil de TikTok">
+              <picture>
+                <source
+                  srcset="CSS/Imagenes/RRSS/TikTok.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="CSS/Imagenes/RRSS/TikTok.png"
+                  alt="Icono de Tiktok"
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </a>
           </div>
           <br />
           <div class="newsletter">
             <p>¿Quieres estar al día de mi trabajo?</p>
-            <form action="" class="newsletter-form">
+            <form action="" class="newsletter-form" aria-label="Suscripción al boletín de noticias">
               <div class="suscripcion">
-                <input type="text" id="email" placeholder=" " required />
+                <input type="text" id="email" placeholder=" " required autocomplete="email"/>
                 <label for="email">Tu email</label>
               </div>
               <input
@@ -546,31 +969,64 @@
                 class="check"
                 value="¡Suscríbete a mi newsletter!"
               />
+              <small class="newsletter"
+              >
+                Recibe solo inspiración mensual. Podrás darte de baja cuando
+                quieras.
+              </small>
             </form>
           </div>
         </div>
         <div class="patrocinador">
           <div class="formulario">
-            <form action="" class="form">
+            <form action="" class="form" aria-label="Acceso a las subastas">
               <h3 class="titulo">Acceso a las subastas</h3>
               <br />
               <div class="input-container">
-                <input type="text" id="nombre" name="nombre" class="input" placeholder=" " required />
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  class="input"
+                  placeholder=" "
+                  required autocomplete="name"
+                />
                 <label for="nombre" class="label">Nombre</label>
               </div>
 
               <div class="input-container">
-                <input type="text" id="telefono" name="telefono" class="input" placeholder=" " required/>
+                <input
+                  type="text"
+                  id="telefono"
+                  name="telefono"
+                  class="input"
+                  placeholder=" "
+                  required autocomplete="tel"
+                />
                 <label for="telefono" class="label">Teléfono</label>
               </div>
 
               <div class="input-container">
-                <input type="text" id="usuario" name="usuario" class="input" placeholder=" " />
+                <input
+                  type="text"
+                  id="usuario"
+                  name="usuario"
+                  class="input"
+                  placeholder=" "
+                  autocomplete="username"
+                />
                 <label for="usuario" class="label">Usuario</label>
               </div>
 
               <div class="input-container">
-                <input type="text" id="password" name="password" class="input" placeholder=" " />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="input"
+                  placeholder=" "
+                  autocomplete="current-password"
+                />
                 <label for="password" class="label">Contraseña</label>
               </div>
               <input type="submit" class="submit_button" value="Entrar" />
@@ -581,136 +1037,232 @@
         <div class="subasta">
           <h2>Obras subastadas</h2>
           <picture>
-              <source srcset="CSS/Imagenes/Muestrario/Lienzo-floral-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Muestrario/Lienzo-floral.webp" type="image/webp">
-          <img
-            src="CSS/Imagenes/Muestrario/Lienzo-floral.jpg"
-            alt="Pintura abstracta en lienzo de un paisaje con motivos botánicos en tonos pastel verde y rosa."
-            width="200"
-            height="200"
-            loading="lazy" decoding="async"
-          />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Lienzo-floral-800.webp"
+              media="(max-width: 600px)"
+              type="image/webp"
+            />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Lienzo-floral.webp"
+              type="image/webp"
+            />
+            <img
+              src="CSS/Imagenes/Muestrario/Lienzo-floral.jpg"
+              alt="Pintura abstracta en lienzo de un paisaje con motivos botánicos en tonos pastel verde y rosa."
+              width="200"
+              height="200"
+              loading="lazy"
+              decoding="async"
+            />
           </picture>
           <picture>
-        <source srcset="CSS/Imagenes/Muestrario/Lienzo-primavera-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Muestrario/Lienzo-primavera.webp" type="image/webp">
-          <img
-            src="CSS/Imagenes/Muestrario/Lienzo-primavera.jpg"
-            alt="Pintura surrealista de un paisaje con un campo, un sol naciente y una mano sosteniendo un brote."
-            width="200"
-            height="200"
-            loading="lazy" decoding="async"
-          />
-          </picture>
-            <picture>
-           <source srcset="CSS/Imagenes/Muestrario/Escultura-Hormigon-2-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Muestrario/Escultura-Hormigon-2.webp" type="image/webp">
-          <img
-            src="CSS/Imagenes/Muestrario/Escultura-Hormigon-2.jpg"
-            alt="Escultura abstracta de hormigón de una figura estilizada frente a un panel circular."
-            width="200"
-            height="200"
-            loading="lazy" decoding="async"
-          />
-          </picture>
-            <picture>
-            <source srcset="CSS/Imagenes/Muestrario/Escultura-metal-4-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Muestrario/Escultura-metal-4.webp" type="image/webp">
-          <img
-            src="CSS/Imagenes/Muestrario/Escultura-metal-4.jpg"
-            alt="Escultura de metal dorada estilo Art Deco del perfil de una mujer con varillas verticales."
-            width="200"
-            height="200"
-            loading="lazy" decoding="async"
-          />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Lienzo-primavera-800.webp"
+              media="(max-width: 600px)"
+              type="image/webp"
+            />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Lienzo-primavera.webp"
+              type="image/webp"
+            />
+            <img
+              src="CSS/Imagenes/Muestrario/Lienzo-primavera.jpg"
+              alt="Pintura surrealista de un paisaje con un campo, un sol naciente y una mano sosteniendo un brote."
+              width="200"
+              height="200"
+              loading="lazy"
+              decoding="async"
+            />
           </picture>
           <picture>
-           <source srcset="CSS/Imagenes/Muestrario/Escultura-metal1-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Muestrario/Escultura-metal1.webp" type="image/webp">
-          <img
-            src="CSS/Imagenes/Muestrario/Escultura-metal1.jpg"
-            alt="Escultura abstracta de metal plateado con órbitas, esferas y formas de estrella sobre una base circular."
-            width="200"
-            height="200"
-            loading="lazy" decoding="async"
-          />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Escultura-Hormigon-2-800.webp"
+              media="(max-width: 600px)"
+              type="image/webp"
+            />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Escultura-Hormigon-2.webp"
+              type="image/webp"
+            />
+            <img
+              src="CSS/Imagenes/Muestrario/Escultura-Hormigon-2.jpg"
+              alt="Escultura abstracta de hormigón de una figura estilizada frente a un panel circular."
+              width="200"
+              height="200"
+              loading="lazy"
+              decoding="async"
+            />
           </picture>
           <picture>
-           <source srcset="CSS/Imagenes/Muestrario/Lienzo-invierno-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Muestrario/Lienzo-invierno.webp" type="image/webp">
-          <img
-            src="CSS/Imagenes/Muestrario/Lienzo-invierno.jpg"
-            alt="Pintura estilizada de un paisaje invernal con un árbol nevado, un camino y un gran planeta azul."
-            width="200"
-            height="200"
-            loading="lazy" decoding="async"
-          />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Escultura-metal-4-800.webp"
+              media="(max-width: 600px)"
+              type="image/webp"
+            />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Escultura-metal-4.webp"
+              type="image/webp"
+            />
+            <img
+              src="CSS/Imagenes/Muestrario/Escultura-metal-4.jpg"
+              alt="Escultura de metal dorada estilo Art Deco del perfil de una mujer con varillas verticales."
+              width="200"
+              height="200"
+              loading="lazy"
+              decoding="async"
+            />
           </picture>
           <picture>
-           <source srcset="CSS/Imagenes/Muestrario/Triptico-invierno-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Muestrario/Triptico-invierno.webp" type="image/webp">
-          <img
-            src="CSS/Imagenes/Muestrario/Triptico-invierno.jpg"
-            alt="Tríptico de un paisaje invernal estilizado con colinas nevadas, un árbol y un copo de nieve."
-            width="200"
-            height="200"
-            loading="lazy" decoding="async"
-          />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Escultura-metal1-800.webp"
+              media="(max-width: 600px)"
+              type="image/webp"
+            />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Escultura-metal1.webp"
+              type="image/webp"
+            />
+            <img
+              src="CSS/Imagenes/Muestrario/Escultura-metal1.jpg"
+              alt="Escultura abstracta de metal plateado con órbitas, esferas y formas de estrella sobre una base circular."
+              width="200"
+              height="200"
+              loading="lazy"
+              decoding="async"
+            />
           </picture>
           <picture>
-            <source srcset="CSS/Imagenes/Muestrario/Navidad-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Muestrario/Navidad.webp" type="image/webp">
-          <img
-            src="CSS/Imagenes/Muestrario/Navidad.jpg"
-            alt="Bodegón navideño con jarrones azules y crema decorados con copos de nieve, sobre un fondo rosa."
-            width="200"
-            height="200"
-            loading="lazy" decoding="async"
-          />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Lienzo-invierno-800.webp"
+              media="(max-width: 600px)"
+              type="image/webp"
+            />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Lienzo-invierno.webp"
+              type="image/webp"
+            />
+            <img
+              src="CSS/Imagenes/Muestrario/Lienzo-invierno.jpg"
+              alt="Pintura estilizada de un paisaje invernal con un árbol nevado, un camino y un gran planeta azul."
+              width="200"
+              height="200"
+              loading="lazy"
+              decoding="async"
+            />
           </picture>
           <picture>
-           <source srcset="CSS/Imagenes/Muestrario/Jarron-800.webp" media="(max-width: 600px)" type="image/webp">
-            <source srcset="CSS/Imagenes/Muestrario/Jarron.webp" type="image/webp">
-          <img
-            src="CSS/Imagenes/Muestrario/Jarron.jpg"
-            alt="Jarrón de cerámica de terracota con asa, sobre un fondo de dos tonos, azul y rosa."
-            width="200"
-            height="200"
-            loading="lazy" decoding="async"
-          />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Triptico-invierno-800.webp"
+              media="(max-width: 600px)"
+              type="image/webp"
+            />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Triptico-invierno.webp"
+              type="image/webp"
+            />
+            <img
+              src="CSS/Imagenes/Muestrario/Triptico-invierno.jpg"
+              alt="Tríptico de un paisaje invernal estilizado con colinas nevadas, un árbol y un copo de nieve."
+              width="200"
+              height="200"
+              loading="lazy"
+              decoding="async"
+            />
           </picture>
           <picture>
-            <source srcset="CSS/Imagenes/Muestrario/Hormigon1-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Muestrario/Hormigon1.webp" type="image/webp">
-          <img
-            src="CSS/Imagenes/Muestrario/Hormigon1.jpg"
-            alt="Escultura abstracta curvilínea de hormigón en tono crema, enmarcada por una estructura cuadrada."
-            width="200"
-            height="200"
-            loading="lazy" decoding="async"
-          />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Navidad-800.webp"
+              media="(max-width: 600px)"
+              type="image/webp"
+            />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Navidad.webp"
+              type="image/webp"
+            />
+            <img
+              src="CSS/Imagenes/Muestrario/Navidad.jpg"
+              alt="Bodegón navideño con jarrones azules y crema decorados con copos de nieve, sobre un fondo rosa."
+              width="200"
+              height="200"
+              loading="lazy"
+              decoding="async"
+            />
           </picture>
           <picture>
-           <source srcset="CSS/Imagenes/Muestrario/Escultura-metal1-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Muestrario/Escultura-metal1.webp" type="image/webp">
-          <img
-            src="CSS/Imagenes/Muestrario/Escultura-metal3.jpg"
-            alt="Escultura moderna de metal dorado texturizado que representa nubes estilizadas, sobre una base rosa."
-            width="200"
-            height="200"
-            loading="lazy" decoding="async"
-          />
-          </picture> 
+            <source
+              srcset="CSS/Imagenes/Muestrario/Jarron-800.webp"
+              media="(max-width: 600px)"
+              type="image/webp"
+            />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Jarron.webp"
+              type="image/webp"
+            />
+            <img
+              src="CSS/Imagenes/Muestrario/Jarron.jpg"
+              alt="Jarrón de cerámica de terracota con asa, sobre un fondo de dos tonos, azul y rosa."
+              width="200"
+              height="200"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
           <picture>
-        <source srcset="CSS/Imagenes/Colecciones/Escultura-metal2-800.webp" media="(max-width: 600px)" type="image/webp">
-              <source srcset="CSS/Imagenes/Colecciones/Escultura-metal2.webp" type="image/webp">
-          <img
-            src="CSS/Imagenes/Colecciones/Escultura-metal2.jpg"
-            alt="Escultura abstracta de metal fibroso con formas entrelazadas y estructuras moleculares, sobre una base blanca."
-            width="200"
-            height="200"
-            loading="lazy" decoding="async"
-          />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Hormigon1-800.webp"
+              media="(max-width: 600px)"
+              type="image/webp"
+            />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Hormigon1.webp"
+              type="image/webp"
+            />
+            <img
+              src="CSS/Imagenes/Muestrario/Hormigon1.jpg"
+              alt="Escultura abstracta curvilínea de hormigón en tono crema, enmarcada por una estructura cuadrada."
+              width="200"
+              height="200"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="CSS/Imagenes/Muestrario/Escultura-metal1-800.webp"
+              media="(max-width: 600px)"
+              type="image/webp"
+            />
+            <source
+              srcset="CSS/Imagenes/Muestrario/Escultura-metal1.webp"
+              type="image/webp"
+            />
+            <img
+              src="CSS/Imagenes/Muestrario/Escultura-metal3.jpg"
+              alt="Escultura moderna de metal dorado texturizado que representa nubes estilizadas, sobre una base rosa."
+              width="200"
+              height="200"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="CSS/Imagenes/Colecciones/Escultura-metal2-800.webp"
+              media="(max-width: 600px)"
+              type="image/webp"
+            />
+            <source
+              srcset="CSS/Imagenes/Colecciones/Escultura-metal2.webp"
+              type="image/webp"
+            />
+            <img
+              src="CSS/Imagenes/Colecciones/Escultura-metal2.jpg"
+              alt="Escultura abstracta de metal fibroso con formas entrelazadas y estructuras moleculares, sobre una base blanca."
+              width="200"
+              height="200"
+              loading="lazy"
+              decoding="async"
+            />
           </picture>
         </div>
       </section>
@@ -718,8 +1270,8 @@
     <br />
     <footer>
       <ul class="terminos-legales">
-        <li><a href="#">¿Dónde estoy?</a></li>
-        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#quien-soy">¿Dónde estoy?</a></li>
+        <li><a href="#email">Términos y condiciones</a></li>
       </ul>
 
       <p id="Copyright">
@@ -728,4 +1280,3 @@
     </footer>
   </body>
 </html>
-<!DOCTYPE html>
